@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html b:version='2.0' class='about-page v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+  <meta charset='utf-8'/>
+  <meta expr:content='data:blog.pageTitle' name='title'/>
+  <meta content='width=device-width,initial-scale=1,maximum-scale=5' name='viewport'/>
+  <meta content='ie=edge' http-equiv='X-UA-Compatible'/>
+  <title><data:blog.title/></title>
+  <meta content='Amit Kumar (Amitkr26): Electronics graduate specializing in VLSI, embedded systems, web development and SEO. Explore portfolio, projects, games and services.' name='description'/>
+  <meta content='Amit Kumar' name='author'/>
+  <meta content='#6366f1' name='theme-color'/>
+  <meta content='Amit Kumar — Portfolio &amp; Projects' property='og:title'/>
+  <meta content='Electronics graduate, VLSI enthusiast, web developer and SEO consultant. View portfolio, projects and games.' property='og:description'/>
+  <meta content='website' property='og:type'/>
+  <meta content='summary_large_image' name='twitter:card'/>
+  <link href='https://fonts.googleapis.com' rel='preconnect'/>
+  <link crossorigin='crossorigin' href='https://fonts.gstatic.com' rel='preconnect'/>
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap' rel='stylesheet'/>
+  
+  <script type='application/ld+json'>{
+  &quot;@context&quot;:&quot;https://schema.org&quot;,
+  &quot;@type&quot;:&quot;Person&quot;,
+  &quot;name&quot;:&quot;Amit Kumar&quot;,
+  &quot;alternateName&quot;:&quot;Amitkr26&quot;,
+  &quot;url&quot;:&quot;https://amitkumar26.netlify.app&quot;,
+  &quot;email&quot;:&quot;amitkrbsc26@gmail.com&quot;,
+  &quot;address&quot;:{&quot;@type&quot;:&quot;PostalAddress&quot;,&quot;addressLocality&quot;:&quot;New Delhi&quot;,&quot;addressCountry&quot;:&quot;IN&quot;},
+  &quot;sameAs&quot;:[&quot;https://github.com/Amitkr26&quot;,&quot;https://in.linkedin.com/in/amitkr26&quot;,&quot;https://www.instagram.com/amit.kr26/&quot;,&quot;https://www.facebook.com/amitk26/&quot;,&quot;https://x.com/Amitkrr26&quot;,&quot;https://www.youtube.com/@Amit.kr26&quot;],
+  &quot;jobTitle&quot;:&quot;Electronics Engineer, VLSI &amp; Web Developer&quot;,
+  &quot;description&quot;:&quot;Portfolio and projects showcasing expertise in VLSI, embedded systems, web development and SEO.&quot;
+}</script>
+
+  <b:skin>
+    <![CDATA[
+:root{
+  --bg:#f6f7fb;
+  --surface:#ffffff;
+  --text:#0f172a;
+  --muted:#5f6c7b;
+  --line:rgba(15,23,42,.08);
+  --accent:#6366f1;
+  --accent-2:#06b6d4;
+  --grad:linear-gradient(135deg,#6366f1 0%,#06b6d4 100%);
+  --shadow:0 10px 30px rgba(2,6,23,.08);
+  --shadow-lg:0 20px 50px rgba(2,6,23,.12);
+  --radius:16px;
+  --maxw:1180px;
+  --glass:rgba(99,102,241,.08);
+  --transition:all 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+:root.dark{
+  --bg:#0b1220;
+  --surface:#0f1724;
+  --text:#e8f0f6;
+  --muted:#9aa4b2;
+  --line:rgba(255,255,255,.08);
+  --accent:#7c83ff;
+  --accent-2:#22d3ee;
+  --grad:linear-gradient(135deg,#7c3aed 0%,#06b6d4 100%);
+  --shadow:0 12px 40px rgba(2,6,23,.5);
+  --shadow-lg:0 25px 60px rgba(2,6,23,.6);
+  --glass:rgba(255,255,255,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{
+  font-family:'Poppins',system-ui,-apple-system,segoe ui,roboto,helvetica,arial,sans-serif;
+  background:radial-gradient(900px 320px at 8% 6%, rgba(99,102,241,.12), transparent),
+    radial-gradient(700px 260px at 92% 94%, rgba(34,211,238,.10), transparent),
+    var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:20px 16px;
+}
+@media (min-width:481px){body{padding:28px 24px}}
+@media (min-width:769px){body{padding:32px 32px}}
+.container{max-width:var(--maxw);margin:0 auto}
+header{position:sticky;top:0;z-index:1000;backdrop-filter:blur(12px);background:rgba(var(--bg)/0.8);border-bottom:1px solid var(--line);margin:-20px -16px 24px;padding:16px}
+@media (min-width:481px){header{margin:-28px -24px 24px;padding:20px 24px}}
+@media (min-width:769px){header{margin:-32px -32px 28px;padding:24px 32px}}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.brand{display:flex;gap:14px;align-items:center;min-width:200px}
+.logo{width:48px;height:48px;border-radius:14px;background:var(--grad);box-shadow:var(--shadow);flex-shrink:0}
+.brand h1{font-size:clamp(16px,5vw,22px);font-weight:700;line-height:1.2}
+.badge{font-size:13px;color:var(--muted);opacity:0.85}
+.brand .badge{margin-top:4px}
+.navlinks{display:flex;gap:8px;align-items:center;flex-wrap:wrap;gap:4px}
+.navlinks a{text-decoration:none;color:var(--muted);padding:8px 14px;border-radius:10px;font-weight:600;font-size:14px;transition:var(--transition)}
+.navlinks a:hover,.navlinks a:focus-visible,.navlinks a.active{color:var(--text);background:var(--glass)}
+.navlinks a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.switch{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface);cursor:pointer;transition:var(--transition);font-weight:600}
+.switch:hover,.switch:focus-visible{background:var(--glass)}
+.switch:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.switch i{width:18px;height:18px;display:inline-block;border-radius:50%;background:conic-gradient(from 0deg at 50% 50%, #f59e0b 0 50%, #111827 0 100%);box-shadow:inset 0 0 0 2px rgba(0,0,0,.08)}
+.switch span{font-size:12px;color:var(--muted)}
+.hero{display:grid;grid-template-columns:1fr;gap:28px;align-items:center;padding:clamp(24px,5vw,40px);border-radius:var(--radius);background:var(--surface);box-shadow:var(--shadow-lg);border:1px solid var(--line);position:relative;overflow:hidden;margin-bottom:24px}
+@media (min-width:769px){.hero{grid-template-columns:1fr 380px;gap:32px}}
+.hero::before{content:"";position:absolute;inset:auto -60px -60px auto;width:220px;height:220px;border-radius:50%;background:var(--grad);filter:blur(50px);opacity:.12;pointer-events:none}
+.hero>div{position:relative;z-index:1}
+.hero h2{font-size:clamp(24px,6vw,40px);line-height:1.2;margin-bottom:16px;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.hero p{color:var(--muted);margin-bottom:20px;max-width:65ch}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+@media (max-width:480px){.ctas{flex-direction:column}}
+.btn{display:inline-flex;gap:10px;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;border:1.5px solid var(--line);font-weight:600;text-decoration:none;font-size:14px;cursor:pointer;transition:var(--transition);white-space:nowrap}
+@media (max-width:480px){.btn{width:100%;padding:14px 16px}}
+.btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn.primary{background:var(--grad);color:#fff;border-color:transparent;box-shadow:var(--shadow-lg)}
+.btn.primary:hover{transform:translateY(-2px);box-shadow:0 15px 50px rgba(99,102,241,.3)}
+.btn.ghost{background:transparent;color:var(--text)}
+.btn.ghost:hover{background:var(--glass);transform:translateY(-2px)}
+.hero aside{padding:20px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));border:1px solid var(--line);position:relative;z-index:1}
+.hero aside h3{margin-bottom:12px;font-size:16px}
+.hero aside .badge{display:block;margin-top:8px;line-height:1.5}
+.hero aside a{color:var(--accent);text-decoration:none;font-weight:600}
+.hero aside a:hover{text-decoration:underline}
+.section{margin-top:24px;padding:clamp(24px,5vw,40px);border-radius:var(--radius);background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);scroll-margin-top:100px}
+.section h3{font-size:clamp(20px,5vw,28px);margin-bottom:18px;font-weight:700}
+.lead{color:var(--muted);max-width:75ch;line-height:1.8}
+.lead strong{color:var(--text);font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:18px}
+.card{padding:20px;border-radius:var(--radius);background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));border:1px solid var(--line);transition:var(--transition);position:relative;overflow:hidden;display:flex;flex-direction:column}
+.card::before{content:"";position:absolute;inset:-100%;background:linear-gradient(45deg,transparent 30%,var(--glass) 50%,transparent 70%);animation:shimmer 3s infinite;opacity:0}
+.card:hover{transform:translateY(-8px);border-color:var(--accent);box-shadow:var(--shadow-lg)}
+.card:hover::before{opacity:1;animation:shimmer 0.6s infinite}
+.card h4{margin-bottom:8px;font-size:16px;font-weight:600;color:var(--text)}
+.card h4 a{color:inherit;text-decoration:none}
+.card h4 a:hover{color:var(--accent);text-decoration:underline}
+.card p{color:var(--muted);font-size:14px;flex-grow:1;margin-bottom:12px;line-height:1.6}
+.card .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.search{background:transparent;padding:12px;border-radius:12px;display:flex;gap:12px;align-items:center;border:1px solid var(--line);margin:20px 0;transition:var(--transition)}
+.search:focus-within{border-color:var(--accent);background:var(--glass)}
+.search svg{color:var(--muted);flex-shrink:0}
+.search input{background:transparent;border:none;outline:none;color:var(--text);min-width:200px;flex-grow:1;font-size:14px}
+.search input::placeholder{color:var(--muted);opacity:0.7}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0;align-items:center}
+.chip{padding:10px 16px;border-radius:999px;background:transparent;border:1.5px solid var(--line);color:var(--text);font-weight:600;cursor:pointer;font-size:13px;transition:var(--transition);white-space:nowrap}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+.chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.chip.active{background:var(--grad);color:#04101a;border-color:transparent}
+.timeline{display:grid;gap:14px}
+.ti{padding:18px;border-radius:var(--radius);border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01));transition:var(--transition)}
+.ti:hover{border-color:var(--accent);transform:translateX(6px)}
+.ti strong{display:block;font-size:15px;color:var(--text);margin-bottom:6px}
+.ti small{color:var(--muted);font-size:13px;line-height:1.6}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity 0.6s ease, transform 0.6s ease}
+.reveal.show{opacity:1;transform:none}
+footer{margin-top:40px;padding:28px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+footer a{color:var(--muted);text-decoration:none;font-weight:600}
+footer a:hover{color:var(--accent);text-decoration:underline}
+#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--grad);color:#04101a;padding:12px 18px;border-radius:12px;box-shadow:var(--shadow-lg);z-index:10000;font-weight:600;opacity:1;transition:opacity 0.3s ease;pointer-events:none}
+@keyframes shimmer{0%{transform:translateX(-100%)}}
+@keyframes slideUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media (max-width:480px){
+  .nav{gap:12px}
+  .navlinks{gap:4px}
+  .navlinks a{padding:6px 10px;font-size:12px}
+  .ctas{flex-direction:column}
+  .btn{width:100%;justify-content:center}
+  .cards{grid-template-columns:1fr}
+  .switch{padding:6px 10px;font-size:11px}
+}
+@media (min-width:481px) and (max-width:768px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important}
+  html{scroll-behavior:auto}
+}
+    ]]>
+  </b:skin>
+</head>
+<body>
+  <div class='container'>
+    <header class='nav' role='banner' aria-label='Primary navigation'>
+      <div class='brand'>
+        <div class='logo' aria-hidden='true'/>
+        <div>
+          <h1>Amit Kumar <span style='opacity:0.75'>— Amitkr26</span></h1>
+          <div class='badge'>Electronics • VLSI • Web • SEO</div>
+        </div>
+      </div>
+      <nav class='navlinks' role='navigation' aria-label='Main navigation'>
+        <a aria-current='page' class='active' href='#home'>Home</a>
+        <a aria-label='About section' href='#about'>About</a>
+        <a aria-label='Services section' href='#services'>Services</a>
+        <a aria-label='Skills section' href='#skills'>Skills</a>
+        <a aria-label='Portfolio projects' href='#portfolio'>Projects</a>
+        <a aria-label='Games section' href='#games'>Games</a>
+        <a aria-label='Education section' href='#education'>Education</a>
+        <a aria-label='Contact section' href='#contact'>Contact</a>
+        <button aria-label='Toggle dark theme' aria-pressed='false' class='switch' id='themeSwitch'>
+          <i aria-hidden='true'/>
+          <span>Theme</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id='home'>
+      <!-- HERO SECTION -->
+      <b:section class='hero reveal' id='hero-section'>
+        <div>
+          <h2 id='hero-title'>Hi, I&apos;m Amit — building at the edge of <em>Electronics × Web × SEO × Games</em></h2>
+          <p>I&apos;m an M.Sc. Electronics graduate (VLSI &amp; embedded systems), web developer and SEO consultant (founder: <strong>RankrSEO</strong>). I craft performance-first websites, content-driven SEO and lightweight HTML5/JS games for blogs.</p>
+          <div class='ctas'>
+            <a class='btn primary' href='#portfolio'>View Projects</a>
+            <a class='btn ghost' href='#contact'>Work with me</a>
+            <a class='btn ghost' href='https://cv-resume247.blogspot.com/' rel='noopener noreferrer' target='_blank'>Resume/CV</a>
+          </div>
+          <div class='badge' style='margin-top:16px'>📍 New Delhi, India • Available for internships &amp; entry-level roles</div>
+        </div>
+        <aside aria-labelledby='quick-info' role='complementary'>
+          <h3 id='quick-info'>Quick Info</h3>
+          <div class='badge'>Email: <a href='mailto:amitkrbsc26@gmail.com' aria-label='Email Amit Kumar'>amitkrbsc26@gmail.com</a></div>
+          <div class='badge'>Portfolio: <a aria-label='View portfolio on Netlify' href='https://amitkumar26.netlify.app' rel='noopener noreferrer' target='_blank'>Netlify</a></div>
+          <div class='badge'>GitHub: <a aria-label='Visit GitHub profile' href='https://github.com/Amitkr26' rel='noopener noreferrer' target='_blank'>@Amitkr26</a></div>
+        </aside>
+      </b:section>
+
+      <!-- ABOUT SECTION -->
+      <b:section class='section reveal' id='about-section'>
+        <h3 id='about-title'>About</h3>
+        <p class='lead'>
+          I am <strong>Amit Kumar</strong> (<strong>Amitkr26</strong>). I work across <em>VLSI/Verilog</em>, <em>embedded systems (Arduino/ESP32)</em>,
+          and <em>web/SEO</em> (Blogger/WordPress, HTML/CSS/JS). Through <strong>RankrSEO</strong>, I help creators &amp; small businesses grow
+          with clean code, fast pages and practical content strategy. I also build lightweight HTML5/JS games for Blogger.
+        </p>
+      </b:section>
+
+      <!-- SERVICES SECTION -->
+      <b:section class='section reveal' id='services-section'>
+        <h3 id='services-title'>Services</h3>
+        <div class='cards' role='list'>
+          <article class='card' role='listitem'>
+            <h4>Web Design &amp; Development</h4>
+            <p>Responsive, fast, SEO-ready websites (Blogger/WordPress/Static). Performance &amp; UX first.</p>
+          </article>
+          <article class='card' role='listitem'>
+            <h4>SEO &amp; Content Strategy</h4>
+            <p>On-page SEO, keyword research, Search Console, local SEO for Indian markets (via RankrSEO).</p>
+          </article>
+          <article class='card' role='listitem'>
+            <h4>HTML5/JS Games for Blogs</h4>
+            <p>Lightweight, single-file games that run smoothly on Blogger/Netlify. Keyboard + touch controls.</p>
+          </article>
+          <article class='card' role='listitem'>
+            <h4>Embedded &amp; IoT Demos</h4>
+            <p>Arduino/ESP32 projects, dashboards, and documentation for education &amp; prototyping.</p>
+          </article>
+          <article class='card' role='listitem'>
+            <h4>VLSI &amp; Verilog (Academic)</h4>
+            <p>Basic HDL modules, simulation, and project documentation for learning &amp; labs.</p>
+          </article>
+        </div>
+      </b:section>
+
+      <!-- SKILLS SECTION -->
+      <b:section class='section reveal' id='skills-section'>
+        <h3 id='skills-title'>Skills &amp; Tech Stack</h3>
+        <div class='cards' role='list'>
+          <div class='card' role='listitem'>
+            <h4>Frontend</h4>
+            <p>HTML5, CSS3, JavaScript, Responsive UI, Accessibility, Animations</p>
+            <div class='chips' role='list'>
+              <span class='chip' role='listitem'>SEO-friendly</span><span class='chip' role='listitem'>Mobile-first</span><span class='chip' role='listitem'>Performance</span>
+            </div>
+          </div>
+          <div class='card' role='listitem'>
+            <h4>Platforms</h4>
+            <p>Blogger, WordPress, Netlify, GitHub Pages</p>
+            <div class='chips' role='list'>
+              <span class='chip' role='listitem'>Blogger</span><span class='chip' role='listitem'>WP</span><span class='chip' role='listitem'>Netlify</span>
+            </div>
+          </div>
+          <div class='card' role='listitem'>
+            <h4>Electronics</h4>
+            <p>Arduino, ESP32, Sensors, DC Sputtering, XRD, VSM</p>
+            <div class='chips' role='list'>
+              <span class='chip' role='listitem'>Embedded</span><span class='chip' role='listitem'>IoT</span><span class='chip' role='listitem'>Lab</span>
+            </div>
+          </div>
+          <div class='card' role='listitem'>
+            <h4>VLSI</h4>
+            <p>Verilog HDL (basics), FPGA (intro), simulation &amp; testbenches</p>
+            <div class='chips' role='list'>
+              <span class='chip' role='listitem'>HDL</span><span class='chip' role='listitem'>FPGA</span>
+            </div>
+          </div>
+          <div class='card' role='listitem'>
+            <h4>SEO &amp; Content</h4>
+            <p>On-page, technical SEO, content planning, internal linking, GSC optimization</p>
+            <div class='chips' role='list'>
+              <span class='chip' role='listitem'>RankrSEO</span><span class='chip' role='listitem'>Local SEO</span>
+            </div>
+          </div>
+          <div class='card' role='listitem'>
+            <h4>Games</h4>
+            <p>Canvas + DOM games, keyboard/touch controls, single-file builds for Blogger</p>
+            <div class='chips' role='list'>
+              <span class='chip' role='listitem'>HTML5</span><span class='chip' role='listitem'>JS</span><span class='chip' role='listitem'>Canvas</span>
+            </div>
+          </div>
+        </div>
+      </b:section>
+
+      <!-- PORTFOLIO SECTION -->
+      <b:section class='section reveal' id='portfolio-section'>
+        <h3 id='portfolio-title'>Projects &amp; Portfolio Links</h3>
+        <div class='search' aria-label='Search portfolio items' role='search'>
+          <svg aria-hidden='true' height='18' viewBox='0 0 24 24' width='18'>
+            <circle cx='11' cy='11' fill='none' r='8' stroke='currentColor' stroke-width='2'/>
+            <path d='m21 21-4.35-4.35' fill='none' stroke='currentColor' stroke-width='2'/>
+          </svg>
+          <input aria-label='Search portfolio' id='search' placeholder='Search links (GitHub, RankrSEO, blogs...)'/>
+        </div>
+        <div aria-label='Filter portfolio by category' class='chips' role='toolbar'>
+          <button aria-pressed='true' class='chip active' data-cat='all'>All</button>
+          <button aria-pressed='false' class='chip' data-cat='personal'>Personal</button>
+          <button aria-pressed='false' class='chip' data-cat='blogs'>Blogs</button>
+          <button aria-pressed='false' class='chip' data-cat='portfolio'>Mirrors</button>
+          <button aria-pressed='false' class='chip' data-cat='agency'>Agency</button>
+          <button aria-pressed='false' class='chip' data-cat='social'>Social</button>
+        </div>
+        <div aria-label='Search results' aria-live='polite' class='cards' id='cards' role='list'/>
+      </b:section>
+
+      <!-- GAMES SECTION -->
+      <b:section class='section reveal' id='games-section'>
+        <h3 id='games-title'>Games by Amit</h3>
+        <div class='cards' role='list'>
+          <article class='card' role='listitem'>
+            <h4><a href='https://bubbleshooterbyamitkr26.blogspot.com' rel='noopener noreferrer' target='_blank'>Bubble Shooter</a></h4>
+            <p>Classic bubble popper — smooth physics, mobile friendly.</p>
+            <div class='actions'>
+              <a class='btn primary' href='https://bubbleshooterbyamitkr26.blogspot.com' rel='noopener noreferrer' target='_blank'>Play</a>
+            </div>
+          </article>
+          <article class='card' role='listitem'>
+            <h4><a href='https://snakeomania.blogspot.com' rel='noopener noreferrer' target='_blank'>SnakeoMania</a></h4>
+            <p>Retro snake with slick controls and score saving.</p>
+            <div class='actions'>
+              <a class='btn primary' href='https://snakeomania.blogspot.com' rel='noopener noreferrer' target='_blank'>Play</a>
+            </div>
+          </article>
+          <article class='card' role='listitem'>
+            <h4><a href='https://breakoutbyamitkr26.blogspot.com' rel='noopener noreferrer' target='_blank'>Breakout</a></h4>
+            <p>Brick breaker with power-ups and level progression.</p>
+            <div class='actions'>
+              <a class='btn primary' href='https://breakoutbyamitkr26.blogspot.com' rel='noopener noreferrer' target='_blank'>Play</a>
+            </div>
+          </article>
+          <article class='card' role='listitem'>
+            <h4><a href='https://bullseye-game.blogspot.com' rel='noopener noreferrer' target='_blank'>Bullseye Archery</a></h4>
+            <p>Timing &amp; precision — hit the center to win.</p>
+            <div class='actions'>
+              <a class='btn primary' href='https://bullseye-game.blogspot.com' rel='noopener noreferrer' target='_blank'>Play</a>
+            </div>
+          </article>
+        </div>
+      </b:section>
+
+      <!-- EDUCATION SECTION -->
+      <b:section class='section reveal' id='education-section'>
+        <h3 id='edu-title'>Education</h3>
+        <div class='timeline'>
+          <div class='ti'>
+            <strong>M.Sc. Electronics — University of Delhi</strong>
+            <small>2023–2025 • Thin-film deposition (DC sputtering), XRD, VSM, Verilog HDL</small>
+          </div>
+          <div class='ti'>
+            <strong>B.Sc. (Electronics)</strong>
+            <small>Foundations in devices, circuits, instrumentation &amp; programming</small>
+          </div>
+        </div>
+      </b:section>
+
+      <!-- CONTACT SECTION -->
+      <b:section class='section reveal' id='contact-section'>
+        <h3 id='contact-title'>Contact</h3>
+        <p class='lead'>Want to collaborate or hire me? Email <strong><a href='mailto:amitkrbsc26@gmail.com'>amitkrbsc26@gmail.com</a></strong> or connect on LinkedIn/GitHub below.</p>
+        <div class='cards' role='list'>
+          <div class='card' role='listitem'>
+            <h4>Direct</h4>
+            <div class='actions'>
+              <a aria-label='Send email to Amit Kumar' class='btn primary' href='mailto:amitkrbsc26@gmail.com'>Email</a>
+              <a aria-label='Visit LinkedIn profile' class='btn ghost' href='https://in.linkedin.com/in/amitkr26' rel='noopener noreferrer' target='_blank'>LinkedIn</a>
+              <a aria-label='Visit GitHub profile' class='btn ghost' href='https://github.com/Amitkr26' rel='noopener noreferrer' target='_blank'>GitHub</a>
+            </div>
+          </div>
+          <div class='card' role='listitem'>
+            <h4>Social Presence</h4>
+            <div class='actions'>
+              <a aria-label='Visit X profile' class='btn ghost' href='https://x.com/Amitkrr26' rel='noopener noreferrer' target='_blank'>X / Twitter</a>
+              <a aria-label='Visit Instagram profile' class='btn ghost' href='https://www.instagram.com/amit.kr26/' rel='noopener noreferrer' target='_blank'>Instagram</a>
+              <a aria-label='Visit Facebook profile' class='btn ghost' href='https://www.facebook.com/amitk26/' rel='noopener noreferrer' target='_blank'>Facebook</a>
+              <a aria-label='Visit YouTube channel' class='btn ghost' href='https://www.youtube.com/@Amit.kr26' rel='noopener noreferrer' target='_blank'>YouTube</a>
+            </div>
+          </div>
+        </div>
+      </b:section>
+    </main>
+
+    <footer role='contentinfo'>
+      <div>© <span id='year'/> Amit Kumar <span style='opacity:0.75'>— Amitkr26</span> • All rights reserved</div>
+    </footer>
+  </div>
+
+  <!-- THEME JAVASCRIPT -->
+  <script type='text/javascript'>
+//<![CDATA[
+(function(){
+  const root = document.documentElement;
+  const themeSwitch = document.getElementById('themeSwitch');
+
+  const initTheme = () => {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isDark = saved ? saved === 'dark' : prefersDark;
+    
+    if (isDark) {
+      root.classList.add('dark');
+      themeSwitch.setAttribute('aria-pressed', 'true');
+    } else {
+      root.classList.remove('dark');
+      themeSwitch.setAttribute('aria-pressed', 'false');
+    }
+  };
+
+  initTheme();
+
+  themeSwitch.addEventListener('click', () => {
+    root.classList.toggle('dark');
+    const isDark = root.classList.contains('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    themeSwitch.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+  });
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', initTheme);
+})();
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+const PORTFOLIO = [
+  {title:'Personal portfolio (Netlify)', url:'https://amitkumar26.netlify.app', cat:'personal', desc:'Primary portfolio website showing projects and contact details.'},
+  {title:'GitHub — Amitkr26', url:'https://github.com/Amitkr26', cat:'personal', desc:'Source code, microprojects and repositories.'},
+  {title:'Hugging Face — Amitkr26', url:'https://huggingface.co/Amitkr26', cat:'personal', desc:'HuggingFace profile & model demos.'},
+  {title:'CV / Resume 247', url:'https://cv-resume247.blogspot.com/', cat:'personal', desc:'Online resume.'},
+  {title:'Academication (Blog)', url:'https://academication.blogspot.com/', cat:'blogs', desc:'Academic posts, notes & electronics tutorials.'},
+  {title:'Aamitkr26 Blog', url:'http://aamitkr26.blogspot.com/', cat:'blogs', desc:'Personal project logs and technical write-ups.'},
+  {title:'Amitkr26 main blog', url:'https://amitkr26.blogspot.com/', cat:'blogs', desc:'Main blog hub & updates.'},
+  {title:'My official links (SEO)', url:'https://amitkrseo.blogspot.com/p/my-official-links-blogs-portfolio.html', cat:'blogs', desc:'SEO & link collections for Amit Kumar.'},
+  {title:'Official web presence (all)', url:'https://amitkr26.blogspot.com/p/official-web-presence-of-amit-kumar-all.html', cat:'blogs', desc:'All official links in one place.'},
+  {title:'Official links page (rf.gd)', url:'https://amitkr26.rf.gd/amit-kumar-electronics-graduate-portfolio-social-media-links/', cat:'blogs', desc:'Detailed links & listing.'},
+  {title:'Mirror — amitkr26.ct.ws', url:'http://amitkr26.ct.ws/', cat:'portfolio', desc:'Mirror portfolio.'},
+  {title:'Mirror — amitkr26.rf.gd', url:'https://amitkr26.rf.gd/?i=1', cat:'portfolio', desc:'Portfolio mirror and archives.'},
+  {title:'Mirror — amitkr26.42web.io', url:'https://amitkr26.42web.io/?i=1', cat:'portfolio', desc:'Hosted mirror portfolio.'},
+  {title:'Aryan-portfolio 1', url:'https://aryan-kumar-portfolio.blogspot.com/', cat:'portfolio', desc:'Related portfolio page.'},
+  {title:'Aryankumar-portfolio 2', url:'https://aryankumar-portfolio.blogspot.com/', cat:'portfolio', desc:'Related portfolio page.'},
+  {title:'Portfolio Aryan', url:'https://portfolioaryan.blogspot.com/', cat:'portfolio', desc:'Related portfolio page.'},
+  {title:'Aryankumar official links', url:'https://aryankumar-portfolio.blogspot.com/p/official-online-presence-of-amit-kumar.html', cat:'portfolio', desc:'Official presence list.'},
+  {title:'mclills yolasite', url:'https://mclills-qaurf-hydreum.yolasite.com/', cat:'portfolio', desc:'External page shared by user.'},
+  {title:'RankrSEO — Website (42web)', url:'https://rankrseo.42web.io/', cat:'agency', desc:'RankrSEO agency & portfolio.'},
+  {title:'RankrSEO — MyStrikingly', url:'https://rankrseo.mystrikingly.com/', cat:'agency', desc:'RankrSEO landing page.'},
+  {title:'RankrSEO — Linktree', url:'https://linktr.ee/rankrseo', cat:'agency', desc:'All RankrSEO links.'},
+  {title:'RankrSEO — RF mirror', url:'http://rankrseo.rf.gd/', cat:'agency', desc:'RankrSEO mirror site.'},
+  {title:'RankrSEO — Blog', url:'https://rankrseo.blogspot.com/', cat:'agency', desc:'Agency updates & SEO posts.'},
+  {title:'RankrSEO — YouTube', url:'https://www.youtube.com/@rankrseo', cat:'agency', desc:'SEO videos & shorts.'},
+  {title:'RankrSEO — Instagram', url:'https://www.instagram.com/rankrseo/', cat:'agency', desc:'IG presence.'},
+  {title:'RankrSEO — Facebook', url:'https://www.facebook.com/rankrseo', cat:'agency', desc:'FB page.'},
+  {title:'RankrSEO — Facebook (alt)', url:'https://www.facebook.com/RankrSEOs', cat:'agency', desc:'FB alt.'},
+  {title:'RankrSEO — Twitter', url:'https://twitter.com/rankrseo', cat:'agency', desc:'X / Twitter.'},
+  {title:'RankrSEO — Pinterest', url:'https://in.pinterest.com/rankrseo/', cat:'agency', desc:'Pins & creatives.'},
+  {title:'LinkedIn — Amitkr26', url:'https://in.linkedin.com/in/amitkr26', cat:'social', desc:'Professional profile and resume.'},
+  {title:'Facebook — Amitk26', url:'https://www.facebook.com/amitk26/', cat:'social', desc:'Personal & project updates.'},
+  {title:'Instagram — @amit.kr26', url:'https://www.instagram.com/amit.kr26/', cat:'social', desc:'Photography & visual posts.'},
+  {title:'YouTube — Amit.kr26', url:'https://www.youtube.com/@Amit.kr26', cat:'social', desc:'Demos and tutorials.'},
+  {title:'X / Twitter — Amitkrr26', url:'https://x.com/Amitkrr26', cat:'social', desc:'Quick updates & links.'}
+];
+
+const cards = document.getElementById('cards');
+const searchInput = document.getElementById('search');
+const chipButtons = document.querySelectorAll('.chip');
+
+const createCard = (item) => {
+  const el = document.createElement('article');
+  el.className = 'card reveal';
+  el.setAttribute('role','listitem');
+
+  const h = document.createElement('h4');
+  const a = document.createElement('a');
+  a.href = item.url;
+  a.target = '_blank';
+  a.rel = 'noopener noreferrer';
+  a.textContent = item.title;
+  h.appendChild(a);
+
+  const p = document.createElement('p');
+  p.textContent = item.desc || item.url;
+
+  const actions = document.createElement('div');
+  actions.className = 'actions';
+
+  const open = document.createElement('a');
+  open.className = 'btn primary';
+  open.href = item.url;
+  open.target = '_blank';
+  open.rel = 'noopener noreferrer';
+  open.textContent = 'Open';
+
+  const copy = document.createElement('button');
+  copy.className = 'btn ghost';
+  copy.type = 'button';
+  copy.textContent = 'Copy';
+  copy.addEventListener('click', (e) => {
+    e.preventDefault();
+    copyText(item.url);
+  });
+
+  actions.appendChild(open);
+  actions.appendChild(copy);
+  el.appendChild(h);
+  el.appendChild(p);
+  el.appendChild(actions);
+  return el;
+};
+
+const renderCards = (list) => {
+  cards.innerHTML = '';
+  if (list.length === 0) {
+    const empty = document.createElement('p');
+    empty.textContent = 'No results found. Try adjusting your search or filter.';
+    empty.style.gridColumn = '1 / -1';
+    empty.style.textAlign = 'center';
+    empty.style.color = 'var(--muted)';
+    empty.style.padding = '40px 20px';
+    cards.appendChild(empty);
+    return;
+  }
+  list.forEach(it => cards.appendChild(createCard(it)));
+  document.querySelectorAll('#cards .reveal').forEach(el => io.observe(el));
+};
+
+renderCards(PORTFOLIO);
+
+const filterCards = () => {
+  const q = searchInput.value.trim().toLowerCase();
+  const active = document.querySelector('.chip.active').getAttribute('data-cat');
+  const filtered = PORTFOLIO.filter(p => {
+    const matchCat = active === 'all' || p.cat === active;
+    const matchQ = !q || (
+      (p.title || '').toLowerCase().includes(q) ||
+      (p.desc || '').toLowerCase().includes(q) ||
+      (p.url || '').toLowerCase().includes(q)
+    );
+    return matchCat && matchQ;
+  });
+  renderCards(filtered);
+};
+
+searchInput.addEventListener('input', filterCards);
+
+chipButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    chipButtons.forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-pressed', 'false');
+    });
+    btn.classList.add('active');
+    btn.setAttribute('aria-pressed', 'true');
+    filterCards();
+  });
+});
+
+const copyText = (txt) => {
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(txt).then(() => {
+      flash('Link copied!');
+    }).catch(() => {
+      fallbackCopy(txt);
+    });
+  } else {
+    fallbackCopy(txt);
+  }
+};
+
+const fallbackCopy = (txt) => {
+  const ta = document.createElement('textarea');
+  ta.value = txt;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.focus();
+  ta.select();
+  try {
+    document.execCommand('copy');
+    flash('Copied!');
+  } catch (err) {
+    flash('Failed to copy');
+  }
+  document.body.removeChild(ta);
+};
+
+const flash = (msg) => {
+  let t = document.getElementById('toast');
+  if (!t) {
+    t = document.createElement('div');
+    t.id = 'toast';
+    document.body.appendChild(t);
+  }
+  t.textContent = msg;
+  t.style.opacity = '1';
+  clearTimeout(t._timeout);
+  t._timeout = setTimeout(() => {
+    t.style.opacity = '0';
+  }, 2000);
+};
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+document.querySelectorAll('.navlinks a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    document.querySelectorAll('.navlinks a').forEach(x => {
+      x.classList.remove('active');
+      x.removeAttribute('aria-current');
+    });
+    a.classList.add('active');
+    a.setAttribute('aria-current', 'page');
+  });
+});
+//]]>
+  </script>
+</body>
+</html>
